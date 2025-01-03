@@ -99,6 +99,80 @@ The entry point of the application. It initializes the app, sets up routing for 
 
 ---
 
+## About Flutter
+Flutter is an open-source UI software development kit created by Google. It is used to develop cross-platform applications for Android, iOS, Linux, macOS, Windows, and the web from a single codebase. WellnessPath leverages Flutter for its frontend to deliver a seamless and responsive user experience across all platforms.
+
+### Key Features of Flutter:
+- **Hot Reload**: Enables real-time updates during development.
+- **Cross-Platform**: Build apps for multiple platforms with one codebase.
+- **Rich Widgets**: Provides pre-designed widgets for a polished UI.
+- **High Performance**: Utilizes Dart programming language for fast execution.
+
+To learn more about Flutter, visit the [official documentation](https://flutter.dev/docs).
+
+---
+
+## API Source
+The backend API for this project is written in PHP and hosted on [AwardSpace](https://www.awardspace.com/). The API enables communication between the Flutter application and the MySQL database for data storage and retrieval. Below are some key features and endpoints of the API:
+
+- **User Authentication**
+  - `login`: Authenticates users based on their credentials.
+  - `register`: Registers a new user and stores their details in the database.
+
+- **Progress Tracking**
+  - `logMeal`: Logs meal data into the database.
+  - `logWorkout`: Records workout details, including calories burned and duration.
+  - `logWaterIntake`: Updates the daily water intake.
+  - `getDailyWaterIntake`: Retrieves the daily total water intake.
+
+- **Data Aggregation**
+  - Fetches daily and detailed progress including BMI, calories, and other metrics.
+
+You can find the PHP API code in the `api/` directory of the backend repository.
+
+---
+
+## How It Works
+The app uses HTTP requests to communicate with the backend API. Below are the steps for each operation:
+1. **API Endpoints**: Each feature (e.g., login, register, log meals) corresponds to a specific API endpoint.
+2. **Data Flow**: Data entered by the user is sent to the API in JSON format via HTTP POST requests.
+3. **Database Updates**: The API interacts with the MySQL database to fetch or store the data.
+4. **Response Handling**: The app processes the response (e.g., success messages, errors) and updates the UI accordingly.
+
+---
+
+## Running the Repository
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+- Install Flutter SDK from [Flutter's official website](https://flutter.dev/docs/get-started/install).
+- Install PHP and MySQL server to set up the backend.
+- Clone this repository and the backend repository to your local machine.
+
+### Steps
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/YourUsername/WellnessPath.git
+   cd WellnessPath
+   ```
+2. **Install Flutter Dependencies**:
+   ```bash
+   flutter pub get
+   ```
+3. **Run the Application**:
+   ```bash
+   flutter run
+   ```
+4. **Set Up the Backend**:
+   - Configure your PHP server and MySQL database using the provided `index.php` file and SQL scripts.
+   - Update the API endpoint in `api_service.dart` to point to your backend.
+
+5. **Test the App**:
+   - Launch the app on an emulator or physical device.
+   - Verify functionality by logging meals, workouts, water intake, and viewing progress.
+
+---
 ## Credits
 
 - **Development Team:** Zainab Maatouk 
