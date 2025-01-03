@@ -101,8 +101,9 @@ The entry point of the application. It initializes the app, sets up routing for 
 
 ## Credits
 
-- **Development Team:** Zainab Maatouk and contributors.
-- **Backend Development:** [Your Name or Team Name Here]
-- **Motivational Quotes:** Various public sources.
+- **Development Team:** Zainab Maatouk 
+- **Backend Development:** LIU Dr. Marwan Cheaito
+- **Email:** 4232001@students.liu.edu.lb
+- **Motivational Quotes:** "Wellness is the complete integration of body, mind, and spirit—the realization that everything we do, think, feel, and believe has an impact on our state of health." – Greg Anderson
 
 ---
