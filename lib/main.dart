@@ -5,7 +5,7 @@ import 'package:wellnesspath/pages/progress_page.dart';
 import 'package:wellnesspath/pages/home_page.dart';
 import 'package:wellnesspath/pages/login_page.dart';
 import 'package:wellnesspath/pages/register_page.dart';
-import 'package:wellnesspath/pages/water_intake_page.dart'; // Import the Water Intake Page
+import 'package:wellnesspath/pages/water_intake_page.dart'; 
 import 'package:shared_preferences/shared_preferences.dart'; // For storing user session
 
 void main() async {
