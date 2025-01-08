@@ -13,7 +13,7 @@ class MealLogPage extends StatefulWidget {
 class _MealLogPageState extends State<MealLogPage> {
   final TextEditingController _foodController = TextEditingController(); // Input for food item
   final TextEditingController _calorieController = TextEditingController(); // Input for calorie count
-  final TextEditingController _itemcountController = TextEditingController();
+  final TextEditingController _itemcountController = TextEditingController(); // Input for item count
   String? _selectedMealType; // Dropdown selection for meal type
   DateTime? _selectedDate; // Meal date
 
