@@ -13,6 +13,7 @@ class MealLogPage extends StatefulWidget {
 class _MealLogPageState extends State<MealLogPage> {
   final TextEditingController _foodController = TextEditingController(); // Input for food item
   final TextEditingController _calorieController = TextEditingController(); // Input for calorie count
+  final TextEditingController _itemcountController = TextEditingController();
   String? _selectedMealType; // Dropdown selection for meal type
   DateTime? _selectedDate; // Meal date
 
@@ -35,6 +36,7 @@ class _MealLogPageState extends State<MealLogPage> {
         'user_id': userId.toString(),
         'food_item': _foodController.text,
         'calories': _calorieController.text,
+        'item_count':_itemcountController.text,
         'meal_type': _selectedMealType!,
         'date': _selectedDate!.toIso8601String(), // Format the date as ISO8601
       });
@@ -109,6 +111,13 @@ class _MealLogPageState extends State<MealLogPage> {
             ),
             const SizedBox(height: 10),
 
+            //Input field for item count
+              TextField(
+              controller: _itemcountController,
+              decoration: const InputDecoration(labelText: 'Item count(1,2,3,...)'),
+              keyboardType: TextInputType.number, // Numeric keyboard
+            ),
+            const SizedBox(height: 10),
             // Dropdown menu for meal type
             DropdownButton<String>(
               value: _selectedMealType,
@@ -171,3 +180,4 @@ class _MealLogPageState extends State<MealLogPage> {
     );
   }
 }
+
